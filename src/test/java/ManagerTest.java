@@ -87,4 +87,18 @@ public class ManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void test() {
+        MoviesManager manager2 = new MoviesManager(3);
+
+        manager2.addMovie("Челюсти 1");
+        manager2.addMovie("Челюсти 2");
+        manager2.addMovie("Челюсти 3");
+
+        String[] expected = {"Челюсти 1", "Челюсти 2", "Челюсти 3"};
+        String[] actual = manager2.findAll();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }

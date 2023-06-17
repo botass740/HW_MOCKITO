@@ -8,9 +8,9 @@ public class MoviesManager {
         this.limit = 5;
     }
 
-//    public MoviesManager(int limit) {
-//        this.limit = limit;
-//    }
+    public MoviesManager(int limit) {
+        this.limit = limit;
+    }
 
     public void addMovie(String movie) {
         String[] tmp = new String[movies.length + 1];
